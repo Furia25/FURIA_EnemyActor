@@ -24,7 +24,7 @@
  * --------------------------------------------------------------------------
  * Help :
  * --------------------------------------------------------------------------
- * Actor class :
+ * Actor notetag :
  * <FE_spriteName:Bat> ---> The name of the file
  * <FE_path:img/characters/> ---> Specific the path of the image.
  * <FE_anchorX:0.25> ---> Change the X anchor of the image. Default 0.75
@@ -51,7 +51,7 @@
         Furia25_Game_Actor_setup.call(this, actorId);
         if($dataActors[actorId].meta.FE_spriteName != null){
             this._Esprite = true;
-            var path = $dataActors[actorId].meta.FE_path || "img/sv_enemies";
+            var path = $dataActors[actorId].meta.FE_path || "img/sv_enemies/";
             var name = $dataActors[actorId].meta.FE_spriteName;
             var pic = le.getPicture(path,name,0);
             var sprite = new Sprite(pic);
